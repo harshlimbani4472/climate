@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        input, select {
+            width: 95%;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        input:focus, select:focus {
+            border: 2px solid red;
+        }
+        input[type="submit"] {
+            width: 100px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;">Heatwave Subscription</h1>
+<form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter name">
+    <label>Email:</label>
+    <input type="email" placeholder="Enter email">
+    <label>Region:</label>
+    <select>
+        <option>North</option>
+        <option>Central</option>
+        <option>South</option>
+    </select>
+    <p>Alert Type:</p>
+    <input type="checkbox"> SMS
+    <input type="checkbox"> Email
+    <br><br>
+    <input type="submit" value="Subscribe">
+</form>
+</body>
+</html>

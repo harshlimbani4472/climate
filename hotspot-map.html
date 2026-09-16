@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatwave Hotspot Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            background-color: #d32f2f;
+            padding: 15px;
+            border: 3px solid #8b0000;
+            border-radius: 10px;
+        }
+        img {
+            width: 500px;
+            border: 3px solid #333;
+            padding: 5px;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Regional Heatwave Hotspot Map</h1>
+    <img src="map.jpg" 
+         alt="Regional Map" 
+         usemap="#heatmap">
+    <map name="heatmap">
+        <area shape="rect"
+              coords="50,50,180,180"
+              href="north.html"
+              alt="North Zone">
+        <area shape="rect"
+              coords="250,50,380,180"
+              href="central.html"
+              alt="Central Zone">
+    </map>
+</body>
+</html>
